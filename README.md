@@ -19,6 +19,10 @@ With angular-include-replace your code render as-
 ## Installation
 
     npm install angular-include-replace
+
+or
+
+    bower install angular-include-replace
 Or download from github and add 'angular-include-replace.js' to your project.
 
 
