@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+angular-include-replace directive
+-->
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+
+</head>
+
+<body ng-app="CoolApp" onLoad='encodePreElements()'>
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+
+      <div class="jumbotron">
+        <div class="container">
+          <div ng-include="'template.html'" ng-include-replace></div>
+          <div ng-include="'template2.html'"></div>
+
+
+
+          <div style="margin-top: 50px;">
+            <h5>Without angular-include-replace directive your code render as-</h5>
+            <pre>
+              <div ng-include="'template2.html'" class="ng-scope">
+                <h2>I'm grubby ng-include element</h2>
+              </div>
+            </pre>
+
+
+            <h5>With angular-include-replace your code render as-</h5>
+            <pre>
+          <h1 class="ng-scope">I'm clean dictating ng-include</h1>
+          </pre>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="src/angular-include-replace.js"></script>
+  <script id="jsbin-javascript">
+    var app = angular.module('CoolApp', ['angular-include-replace']);
+  </script>
+  <script type="text/javascript">
+    function encodePreElements() {
+      var pre = document.getElementsByTagName('pre');
+      for (var i = 0; i < pre.length; i++) {
+        var encoded = htmlEncode(pre[i].innerHTML);
+        pre[i].innerHTML = encoded + '<br>';
+      }
+    };
+
+    function htmlEncode(value) {
+      var div = document.createElement('div');
+      var text = document.createTextNode(value);
+      div.appendChild(text);
+      return div.innerHTML;
+    }
+  </script>
+</body>
+
+</html>
