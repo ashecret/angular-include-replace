@@ -1,0 +1,16 @@
+{
+  "name": "angular-include-replace",
+  "version": "1.0.0",
+  "description": "Angular directive to replace original ng-include directive element",
+  "main": "angular-include-replace.js",
+  "authors": [
+    "Ashraful Alam"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular-include-replace",
+    "includeReplace",
+    "include-replace"
+  ],
+  "homepage": "https://github.com/ashecret/angular-include-replace"
+}
