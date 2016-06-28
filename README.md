@@ -3,7 +3,7 @@ Angular directive to replace original ng-include directive element
 
 
  
-Without angular-include-replace directive your code render as below when you use -
+Without angular-include-replace directive your code render as below-
 
     <div ng-include="'template2.html'" class="ng-scope">
       <h2>I'm grubby ng-include element</h2>
