@@ -14,8 +14,6 @@ With angular-include-replace your code render as-
 
     <h1 class="ng-scope">I'm clean dictating ng-include</h1>
 
-With angular-include-replace your code render as-
-<h1 class="ng-scope">I replace ng-include</h1>
 
 
 ## Installation
@@ -33,6 +31,11 @@ in angular
 in html 
 
     <div ng-include="'template.html'" ng-include-replace></div>
+    
+
+## Example
+
+http://plnkr.co/edit/2sacyBXVTnwGFLEKvczn?p=preview
 
 
 
