@@ -1,4 +1,4 @@
-# angular-include-replace (ng-include-replace)
+# angular-include-replace (ng-include-replace) [![NPM Downloads](https://img.shields.io/npm/dm/angular-include-replace.svg?style=flat)](https://www.npmjs.com/package/angular-include-replace)
 Angular directive to replace original ng-include directive element 
 
 
